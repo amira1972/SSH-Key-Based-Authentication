@@ -1,0 +1,20 @@
+################ The name of server B is test1 & The name of server A is test
+
+ip -br a
+     => 192.168.56.10
+
+ping 192.168.56.102     #ip > server B 
+ssh-keygen              #generate th pub / private keys 
+ssh-copy-id  test1@192.168.56.102 
+                        #Enter the pass of user test1 on server B is 2222
+ssh test1@192.168.56.102
+
+nano amira.sh
+                       #the script exits on amira.sh file
+
+chmod +x amira.sh
+
+scp amira.sh test1@192.168.56.102:/home/test1/
+
+ssh test1@192.168.56.102
+bash /home/test1/amira.sh
