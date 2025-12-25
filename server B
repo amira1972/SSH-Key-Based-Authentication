@@ -1,0 +1,9 @@
+
+ip -br a
+           => 192.168.56.102
+
+
+systemctl status sshd
+firewall-cmd --add-sevice=ssh --permanent
+firewall-cmd --reload
+
