@@ -6,7 +6,7 @@ ip -br a
 ping 192.168.56.102     #ip > server B 
 ssh-keygen              #generate th pub / private keys 
 ssh-copy-id  test1@192.168.56.102 
-                        #Enter the pass of user test1 on server B is 2222
+                        # the pass of user test1 on server B is 2222
 ssh test1@192.168.56.102
 
 nano amira.sh
